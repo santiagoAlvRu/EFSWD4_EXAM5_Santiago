@@ -2,6 +2,15 @@
 
 session_start();
 
+if (!isset($_SESSION["user"]) && !isset($_SESSION["admin"])) {
+    header("login.php");
+    exit();
+}
+
+if (isset($_SESSION["admin"])) {
+    header("dashboard.php");
+}
+
 require_once "db_connect.php";
 
 $petId = $_GET["id"];

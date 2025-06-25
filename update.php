@@ -2,6 +2,11 @@
 
 session_start();
 
+if (!isset($_SESSION["user"]) && !isset($_SESSION["admin"])) {
+    header("login.php");
+    exit();
+}
+
 require_once "db_connect.php";
 require_once "functions.php";
 
