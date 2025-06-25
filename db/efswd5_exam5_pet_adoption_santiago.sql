@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 25, 2025 at 09:08 AM
+-- Generation Time: Jun 25, 2025 at 05:36 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -49,7 +49,7 @@ CREATE TABLE `pets` (
 
 INSERT INTO `pets` (`id`, `name`, `breed`, `gender`, `size`, `age`, `picture`, `address`, `vaccinated`, `description`, `status`) VALUES
 (5, 'Cutie', 'Golden Retriever', 'Male', 'Medium', 2, '68581b924c1b2.jpg', 'Praterstraße 45', 'Yes', 'A friendly and familiar dog', 'Available'),
-(6, 'Benito', 'Beagle', 'Male', 'Small', 2, '6859087326302.jpg', 'Margaretenstraße 41', 'Yes', 'Loyal and curious. Great with other pets', 'Available'),
+(6, 'Benito', 'Beagle', 'Male', 'Small', 3, '6859087326302.jpg', 'Margaretenstraße 41', 'Yes', 'Loyal and curious. Great with other pets', 'Available'),
 (7, 'Luna', 'Chihuahua', 'Female', 'X-Small', 1, '6859090a82671.jpg', 'Kollingasse 8', 'Yes', 'Small but feisty. Prefers a quiet home.', 'Available'),
 (22, 'Luli', 'Pomerania', 'Female', 'X-Small', 9, '685a670968ef9.jpg', 'Kollingasse 14', 'Yes', 'A lovely dog, great for a family.', 'Available'),
 (23, 'Stevy', 'Bull Dog', 'Male', 'Medium', 9, '685a67986cbfb.jpg', 'Karmeliterplatz 2', 'Yes', 'A dog who loves to go outside, very sociable and respectfull.', 'Available');
@@ -71,8 +71,7 @@ CREATE TABLE `pet_adoption` (
 --
 
 INSERT INTO `pet_adoption` (`id`, `user_id`, `pet_id`) VALUES
-(1, 16, 5),
-(15, 16, 6);
+(1, 16, 5);
 
 -- --------------------------------------------------------
 
@@ -98,7 +97,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `fname`, `lname`, `email`, `date_of_birth`, `address`, `picture`, `password`, `status`) VALUES
 (2, 'Santiago', 'Alvarez Ruiz', 'santiago@admin.com', '1990-01-19', 'Praterstrasse 23', '6857be11ec357.png', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', 'admin'),
-(3, 'Maria', 'Lang', 'marialang@user.com', '1985-04-15', 'Margaretenstraße 15', '6857bb2571b3b.jpg', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', 'user'),
+(3, 'Maria', 'Lang', 'marialang@user.com', '1985-04-15', 'Margaretenstraße 17', '6857bb2571b3b.jpg', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', 'user'),
 (15, 'John', 'Has', 'john@user.com', '1990-04-05', 'Praterstraße 12', '6859a2df67373.jpg', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', 'user'),
 (16, 'Santiago', 'Alvarez Ruiz', 'santiago@user.com', '1990-02-19', 'Praterstraße 15', 'avatar.png', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', 'user');
 
@@ -141,7 +140,7 @@ ALTER TABLE `pets`
 -- AUTO_INCREMENT for table `pet_adoption`
 --
 ALTER TABLE `pet_adoption`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `user`
