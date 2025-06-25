@@ -48,9 +48,6 @@ if (mysqli_num_rows($resultUsers) > 0) {
 } else {
     $layout = "No result found!";
 }
-
-mysqli_close($connect);
-
 ?>
 
 <!DOCTYPE html>

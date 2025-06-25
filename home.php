@@ -55,8 +55,6 @@ if (mysqli_num_rows($resultPets) > 0) {
 } else {
     $cards = "<p class='text-danger'>No results found</p>";
 }
-
-mysqli_close($connect);
 ?>
 
 <!DOCTYPE html>

@@ -52,7 +52,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     $cards = "<p class='text-danger'>No results found</p>";
 }
-
 ?>
 
 <!doctype html>
